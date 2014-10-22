@@ -58,3 +58,7 @@ This short guide will detail how to copy a file to a Storage Bucket using gsutil
 1. Create a file to copy to the Storage Bucket.
 
 	touch testfile
+
+2. Copy the file to the Storage bucket using gsutil.
+
+	gsutil cp testfile gs://my_bucket
