@@ -54,3 +54,7 @@ To view the list of available commands:
 ##Copying file to a Google Cloud Platform Storage Bucket using gsutil
 
 This short guide will detail how to copy a file to a Storage Bucket using gsutil.
+
+1. Create a file to copy to the Storage Bucket.
+
+	touch testfile
