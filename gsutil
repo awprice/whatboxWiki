@@ -1,0 +1,11 @@
+#Introduction
+
+gsutil is a tool written in Python that let's you access the Google Storage cloud from the command line. It allows you to do the following:
+
++ Creating and deleting buckets.
++ Uploading, downloading, and deleting objects.
++ Listing buckets and objects.
++ Moving, copying, and renaming objects.
++ Editing object and bucket ACLs.
+
+This guide will cover how to install gsutil onto your slot. It won't go into detail in how to set up Google Cloud Platform, however.
