@@ -21,3 +21,7 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 3. Download the gsutil source
 
 	wget https://storage.googleapis.com/pub/gsutil.tar.gz
+
+4. Extract the source and enter the directory
+
+	tar -zxf gsutil.tar.gz; cd gsutil
