@@ -33,3 +33,8 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 6. Add the following line to ``~/.bashrc`` to add the executable to your PATH environment variable. This will allow you to simply type ``gsutil`` to use gsutil.
 
         export PATH=${PATH}:~/.config/gsutil/
+
+7. (Optional) Clean up the setup files.
+
+	cd ..
+	rm gsutil.tar.gz
