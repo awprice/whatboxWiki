@@ -39,7 +39,7 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
         cd ..
         rm gsutil.tar.gz
 
-Node.js should now be installed in ``~/.config/gsutil/``. The next part shall detail how one might use it.
+gsutil should now be installed in ``~/.config/gsutil/``. The next part shall detail how one might use it.
 
 #Use
 
