@@ -25,3 +25,9 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 4. Extract the source and enter the directory
 
 	tar -zxf gsutil.tar.gz; cd gsutil
+
+5. Configure gsutil to work with your Google Cloud Platform. Follow the steps in the configure process, it is self explanatory.
+
+	gsutil config
+
+
