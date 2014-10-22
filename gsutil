@@ -9,3 +9,15 @@ gsutil is a tool written in Python that let's you access the Google Storage clou
 + Editing object and bucket ACLs.
 
 This guide will cover how to install gsutil onto your slot. It won't go into detail in how to set up Google Cloud Platform, however.
+
+#Installation
+
+1. Connect to your slot through [SSH](/wiki/SSH)
+
+2. Create the installation directory for gsutil
+
+        mkdir ~/.config/nodejs
+
+3. Download the gsutil source
+
+	wget https://storage.googleapis.com/pub/gsutil.tar.gz
