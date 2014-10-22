@@ -16,19 +16,19 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 
 2. Create the installation directory for gsutil
 
-        mkdir ~/.config/nodejs
+        mkdir ~/.config/gsutil
 
 3. Download the gsutil source
 
-	wget https://storage.googleapis.com/pub/gsutil.tar.gz
+        wget https://storage.googleapis.com/pub/gsutil.tar.gz
 
 4. Extract the source and enter the directory
 
-	tar -zxf gsutil.tar.gz; cd gsutil
+        tar -zxf gsutil.tar.gz; cd gsutil
 
 5. Configure gsutil to work with your Google Cloud Platform. Follow the steps in the configure process, it is self explanatory.
 
-	gsutil config
+        gsutil config
 
 6. Add the following line to ``~/.bashrc`` to add the executable to your PATH environment variable. This will allow you to simply type ``gsutil`` to use gsutil.
 
@@ -36,8 +36,8 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 
 7. (Optional) Clean up the setup files.
 
-	cd ..
-	rm gsutil.tar.gz
+        cd ..
+        rm gsutil.tar.gz
 
 Node.js should now be installed in ``~/.config/gsutil/``. The next part shall detail how one might use it.
 
@@ -45,11 +45,11 @@ Node.js should now be installed in ``~/.config/gsutil/``. The next part shall de
 
 To use gsutil, simply do the following:
 
-	gsutil <command>
+        gsutil <command>
 
 To view the list of available commands:
 
-	gsutil help
+        gsutil help
 
 ##Copying file to a Google Cloud Platform Storage Bucket using gsutil
 
@@ -57,11 +57,11 @@ This short guide will detail how to copy a file to a Storage Bucket using gsutil
 
 1. Create a file to copy to the Storage Bucket.
 
-	touch testfile
+        touch testfile
 
 2. Copy the file to the Storage bucket using gsutil.
 
-	gsutil cp testfile gs://my_bucket
+        gsutil cp testfile gs://my_bucket
 
 The file should successfully transfer to the Storage Bucket.
 
