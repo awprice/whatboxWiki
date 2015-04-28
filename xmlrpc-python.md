@@ -10,8 +10,7 @@ Some use cases of using Python to interact with your rTorrent server through XML
 
 + Script to automatically remove a torrent when it has seeded a certain amount
 + Web interface using [Flask](http://flask.pocoo.org/) or [Bottle](http://bottlepy.org/docs/dev/index.html) to display torrent information
-
- + Many more!
++ + Many more!
 
 #XMLRPC Login Details
 
