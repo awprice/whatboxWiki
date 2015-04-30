@@ -18,9 +18,9 @@ Some use cases of using Python to interact with your rTorrent server through XML
 The login details for the XMLRPC interface on your rTorrent server are as follows:
 
 <table class="mini">
-<tr><td>Protocol: </td><td><code>HTTP</code></td></tr>
+<tr><td>Protocol: </td><td><code>HTTPS</code></td></tr>
 <tr><td>Host: </td><td><code>{{SERVER}}.whatbox.ca</code></td></tr>
-<tr><td>Port: </td><td><code>80</code></td></tr>
+<tr><td>Port: </td><td><code>443</code></td></tr>
 <tr><td>Mountpoint: </td><td><code>/xmlrpc</code></td></tr>
 <tr><td>Username: </td><td><code>{{USER}}</code></td></tr>
 <tr><td>Password: </td><td><code>(Your password)</code></td></tr>
@@ -39,7 +39,7 @@ The library [xmlrpclib](https://docs.python.org/2/library/xmlrpclib.html) is req
     import xmlrpclib
 
     # Create an object to represent our server. Use the login information in the XMLRPC Login Details section here.
-    server_url = "http://{{USER}}:(Your password)@{{SERVER}}.whatbox.ca:80/xmlrpc";
+    server_url = "https://{{USER}}:(Your password)@{{SERVER}}.whatbox.ca:443/xmlrpc";
     server = xmlrpclib.Server(server_url);
 
     # Get torrents in the main view
@@ -55,5 +55,5 @@ The library [xmlrpclib](https://docs.python.org/2/library/xmlrpclib.html) is req
 
 This script essentially connects to the XMLRPC interface of the rTorrent server, retrieves a list of the torrents in the main view, and then for each of those torrents, gets the name of the torrent and the directory of the torrent.
 
-Due to the easy use of Python, creating scripts to interact with the XMLRPC interface of an XMLRPC server is painless.
+Due to the easy use of Python, creating scripts to interact with the XMLRPC interface of an rTorrent server is painless.
 
