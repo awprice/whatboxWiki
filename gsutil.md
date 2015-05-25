@@ -1,16 +1,16 @@
-#Introduction
+# Introduction
 
-gsutil is a tool written in Python that let's you access the Google Storage cloud from the command line. It allows you to do the following:
+gsutil is a tool written in Python that lets you access the Google Storage cloud from the command line. It allows you to do the following:
 
-+ Creating and deleting buckets.
-+ Uploading, downloading, and deleting objects.
-+ Listing buckets and objects.
-+ Moving, copying, and renaming objects.
-+ Editing object and bucket ACLs.
++ Create and delete buckets.
++ Upload, download, and delete objects.
++ List buckets and objects.
++ Move, copy, and rename objects.
++ Edit object and bucket ACLs.
 
 This guide will cover how to install gsutil onto your slot. It won't go into detail in how to set up Google Cloud Platform, however.
 
-#Installation
+# Installation
 
 1. Connect to your slot through [SSH](/wiki/SSH)
 
@@ -41,17 +41,17 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 
 gsutil should now be installed in ``~/.config/gsutil/``. The next part shall detail how one might use it.
 
-#Use
+# Use
 
 To use gsutil, simply do the following:
 
-        gsutil <command>
+    gsutil <command>
 
 To view the list of available commands:
 
-        gsutil help
+    gsutil help
 
-##Copying file to a Google Cloud Platform Storage Bucket using gsutil
+## Copying file to a Google Cloud Platform Storage Bucket using gsutil
 
 This short guide will detail how to copy a file to a Storage Bucket using gsutil.
 
@@ -65,6 +65,6 @@ This short guide will detail how to copy a file to a Storage Bucket using gsutil
 
 The file should successfully transfer to the Storage Bucket.
 
-This completed the guide on how to set up gsutil on your slot. 
+This completes the guide on how to set up gsutil on your slot. 
 
 Full detailed information about gsutil can be found on the [gsutil Tool Page](https://cloud.google.com/storage/docs/gsutil).
