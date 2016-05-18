@@ -28,14 +28,18 @@ This guide will cover how to install and configure Node.js, as well as how to te
 
         make; make install
 
-8. Add the following line to ``~/.bashrc`` to add the executable to your PATH environment variable. This will allow you to simply type ``node`` to use Node and ``npm`` to use NPM.
+7. Add the following line to ``~/.bashrc`` to add the executable to your PATH environment variable. This will allow you to simply type ``node`` to use Node and ``npm`` to use NPM.
 
         export PATH=${PATH}:~/.config/nodejs/bin/
+
+8. Reload your ``~/.bashrc`` to be able to use the newly added commands.
+
+        source ~/.bashrc
 
 9. (Optional) Clean up the setup files.
 
         cd ..
-        rm -r node-latest node-latest.tar.gz
+        rm -rf node-latest node-latest.tar.gz
 
 Node.js should now be installed in ``~/.config/nodejs/``. The next part shall detail on how to use Node.js.
 

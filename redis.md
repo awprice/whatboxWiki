@@ -36,7 +36,11 @@ This guide hopes to cover the installation of the Redis Server and Client on you
 
         export PATH=${PATH}:~/.config/redis/bin/
 
-9. (Optional) Clean up the setup files
+9. Reload your ``~/.bashrc`` to be able to use the newly added commands.
+
+        source ~/.bashrc
+
+10. (Optional) Clean up the setup files
 
         cd ..
         rm -rf redis-stable redis-stable.tar.gz 

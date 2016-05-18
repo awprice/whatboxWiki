@@ -34,10 +34,14 @@ This guide will cover how to install gsutil onto your slot. It won't go into det
 
         export PATH=${PATH}:~/.config/gsutil/
 
-7. (Optional) Clean up the setup files.
+7. Reload your ``~/.bashrc`` to be able to use the newly added commands.
+
+        source ~/.bashrc
+
+8. (Optional) Clean up the setup files.
 
         cd ..
-        rm gsutil.tar.gz
+        rm -rf gsutil gsutil.tar.gz
 
 gsutil should now be installed in ``~/.config/gsutil/``. The next part shall detail how one might use it.
 
