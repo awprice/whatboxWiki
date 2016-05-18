@@ -11,7 +11,7 @@ Some use cases of using Python to interact with your rTorrent server through XML
 + Script to automatically remove a torrent when it has seeded a certain amount
 + Web interface using [Flask](http://flask.pocoo.org/) or [Bottle](http://bottlepy.org/docs/dev/index.html) to display torrent information
 + Script with a cron job to periodically send information about currently running torrents to an email address
-+ + Many more!
++ \+ Many more!
 
 # XMLRPC Login Details
 
@@ -53,7 +53,7 @@ The library [xmlrpclib](https://docs.python.org/2/library/xmlrpclib.html) is req
         # Print the directory of torrent
         print server.d.get_directory(torrent)
 
-This script essentially connects to the XMLRPC interface of the rTorrent server, retrieves a list of the torrents in the main view, and then for each of those torrents, gets the name of the torrent and the directory of the torrent.
+This script connects to the XMLRPC interface of the rTorrent server, retrieves a list of the torrents in the main view, and then for each of those torrents, gets the name of the torrent and the directory of the torrent.
 
 Due to the easy use of Python, creating scripts to interact with the XMLRPC interface of an rTorrent server is painless.
 
