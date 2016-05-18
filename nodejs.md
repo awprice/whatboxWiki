@@ -14,11 +14,11 @@ This guide will cover how to install and configure Node.js, as well as how to te
 
 3. Download the source
  
-        wget http://nodejs.org/dist/v0.10.32/node-v0.10.32.tar.gz
+        wget http://nodejs.org/dist/node-latest.tar.gz
 
 4. Extract the source and enter the directory
 
-        tar -zxf node-v0.10.32.tar.gz; cd node-v0.10.32
+        tar -zxf node-latest.tar.gz; cd node-latest
 
 5. Configure the installation. Ensure that the prefix option matches the location where we created the installation directory.
 
@@ -35,7 +35,7 @@ This guide will cover how to install and configure Node.js, as well as how to te
 9. (Optional) Clean up the setup files.
 
         cd ..
-        rm -r node-v0.10.32 node-v0.10.32.tar.gz
+        rm -r node-latest node-latest.tar.gz
 
 Node.js should now be installed in ``~/.config/nodejs/``. The next part shall detail on how to use Node.js.
 
@@ -49,7 +49,7 @@ It is recommended to run it in a screen session so that you can close the SSH co
 
 ## Simple HTTP Server Test
 
-To verify that Node.js is working, the following is an easy and simple test that will run a HTTP server on a specified port. 
+To verify that Node.js is working, the following is an easy and simple test that will run a HTTP server on a specified port.
 
 A random port number between 10000 and 65535 is needed and will be used to access the HTTP server that we create. The port number `{{PORT}}` has automatically been generated and will be used throughout this article, but can be changed if needed.
 
@@ -68,9 +68,15 @@ A random port number between 10000 and 65535 is needed and will be used to acces
 
     server.listen({{PORT}});
     console.log("Server is listening");
-    
+
 3. Start the HTTP server with the following command
 
         node test.js
 
 If you navigate your browser to `http://{{SERVER}}.whatbox.ca:{{PORT}}/`, you should see "Hello World!".
+
+# Further Learning
+
+API documentation can be found on their official website at `https://nodejs.org/api`.
+
+If you are just starting out with Node.js (or Javascript in general), `http://nodeschool.io/#workshopper-list` provide great hands-on tutorials (NOTE: They require Node.js to be installed on the machine before you begin).
