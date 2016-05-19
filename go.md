@@ -2,9 +2,9 @@
 
 Go or Golang is an open source programming language created at Google. It is a compiled, statically typed language
 in the style of Algol and C, with garbage collection, limited structural typing, memory safety features and CSP-style
-concurrent programming features
+concurrent programming features.
 
-This guide will cover how to install and configure Go, as well as how to test it with a small and simple "Hello Word"
+This guide will cover how to install and configure Go, as well as how to test it with a small and simple "Hello world!"
 program.
 
 # Installation
