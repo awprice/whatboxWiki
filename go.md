@@ -75,7 +75,7 @@ To verify that Go is working, the following is an easy and simple test that will
         fmt.Println("Hello world!")
     }
 
-3. Start the HTTP server with the following command
+3. Run the Go program with the following command
 
         go run helloworld.go
 
